@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+{% load static %} <!-- Esta línea le dice a django que usaremos los static -->
+<html>
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Zoo Aventura</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <!-- Logo de la pestaña (favicon) -->
+    <link rel="icon" type="image/png" href="{% static 'imagenes/narwhal.jpg' %}">
+</head>
+
+<body>
+
+    <header>
+        <h1>🦁 Zoo Aventura</h1>
+
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#animales">Animales</a>
+            <a href="#horarios">Horarios</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="inicio" class="bienvenida">
+            <h2>Bienvenido al Zoo Aventura</h2>
+            <p>
+                Descubre animales de todo el mundo y aprende sobre ellos
+                mientras disfrutas de una visita inolvidable.
+            </p>
+
+            <button id="botonSaludo">¡Descubre el zoo!</button>
+        </section>
+
+        <section id="animales">
+            <h2>Nuestros animales</h2>
+
+            <div class="animales-container">
+
+                <article class="animal">
+                    <h3>🦁 León</h3>
+                    <p>
+                        El león es uno de los felinos más grandes
+                        y vive principalmente en África.
+                    </p>
+                </article>
+
+                <article class="animal">
+                    <h3>🐘 Elefante</h3>
+                    <p>
+                        Los elefantes son los animales terrestres
+                        más grandes del planeta.
+                    </p>
+                </article>
+
+                <article class="animal">
+                    <h3>🦒 Jirafa</h3>
+                    <p>
+                        La jirafa destaca por su largo cuello y
+                        puede alcanzar grandes alturas.
+                    </p>
+                </article>
+
+                <article class="animal">
+                    <h3>🐧 Pingüino</h3>
+                    <p>
+                        Los pingüinos son aves que no pueden volar,
+                        pero son excelentes nadadores.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="horarios" class="horarios">
+            <h2>Horarios</h2>
+
+            <p><strong>Lunes a viernes:</strong> 09:00 - 18:00</p>
+            <p><strong>Sábados y domingos:</strong> 09:00 - 20:00</p>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+
+            <p>Email: contacto@zooaventura.com</p>
+            <p>Teléfono: 600 123 456</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Zoo Aventura</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="{% static 'js/style.js' %}"></script>
+
+</body>
+</html>

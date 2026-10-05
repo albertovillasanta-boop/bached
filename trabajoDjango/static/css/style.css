@@ -1,0 +1,117 @@
+/* Estilos generales */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f8f1;
+    color: #333;
+}
+
+/* Cabecera */
+
+header {
+    background-color: #2e7d32;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 15px;
+}
+
+/* Menú */
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Contenido */
+
+main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Bienvenida */
+
+.bienvenida {
+    background-color: #dcedc8;
+}
+
+.bienvenida h2 {
+    font-size: 32px;
+}
+
+/* Botón */
+
+button {
+    background-color: #388e3c;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #1b5e20;
+}
+
+/* Animales */
+
+.animales-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.animal {
+    background-color: white;
+    width: 220px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+.animal h3 {
+    color: #2e7d32;
+}
+
+/* Horarios */
+
+.horarios {
+    background-color: #e8f5e9;
+}
+
+/* Pie de página */
+
+footer {
+    background-color: #1b5e20;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
