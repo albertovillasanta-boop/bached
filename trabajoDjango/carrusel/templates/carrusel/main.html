@@ -1,0 +1,140 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Zoo Aventura - Carrusel de animales</title>
+
+    <!-- Archivo CSS -->
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🦁 Zoo Aventura</h1>
+        <p>Descubre algunos de nuestros animales</p>
+    </header>
+
+    <main>
+
+        <section class="carrusel">
+
+            <!-- Botón anterior -->
+            <button class="boton anterior" id="anterior" aria-label="Animal anterior">
+                &#10094;
+            </button>
+
+            <!-- Contenedor de los animales -->
+            <div class="animales">
+
+                <!-- León -->
+                <article class="animal activo">
+                    <img src="leon.jpg" alt="León">
+
+                    <div class="informacion">
+                        <h2>🦁 León</h2>
+
+                        <p>
+                            El león es uno de los felinos más grandes
+                            del mundo y es conocido como el rey de la selva.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Elefante -->
+                <article class="animal">
+                    <img src="elefante.jpg" alt="Elefante">
+
+                    <div class="informacion">
+                        <h2>🐘 Elefante</h2>
+
+                        <p>
+                            Los elefantes son los animales terrestres
+                            más grandes del planeta y destacan por su gran memoria.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Jirafa -->
+                <article class="animal">
+                    <img src="jirafa.jpg" alt="Jirafa">
+
+                    <div class="informacion">
+                        <h2>🦒 Jirafa</h2>
+
+                        <p>
+                            La jirafa es conocida por su largo cuello
+                            y es uno de los animales más altos del mundo.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Tigre -->
+                <article class="animal">
+                    <img src="tigre.jpg" alt="Tigre">
+
+                    <div class="informacion">
+                        <h2>🐯 Tigre</h2>
+
+                        <p>
+                            El tigre es un gran felino caracterizado
+                            por sus rayas y su gran capacidad para cazar.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Pingüino -->
+                <article class="animal">
+                    <img src="pinguino.jpg" alt="Pingüino">
+
+                    <div class="informacion">
+                        <h2>🐧 Pingüino</h2>
+
+                        <p>
+                            Los pingüinos son aves que no vuelan,
+                            pero son excelentes nadadores.
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- Botón siguiente -->
+            <button class="boton siguiente" id="siguiente" aria-label="Siguiente animal">
+                &#10095;
+            </button>
+
+        </section>
+
+        <!-- Indicadores del carrusel -->
+        <div class="indicadores">
+
+            <button class="indicador activo" data-indice="0" aria-label="Mostrar león"></button>
+
+            <button class="indicador" data-indice="1" aria-label="Mostrar elefante"></button>
+
+            <button class="indicador" data-indice="2" aria-label="Mostrar jirafa"></button>
+
+            <button class="indicador" data-indice="3" aria-label="Mostrar tigre"></button>
+
+            <button class="indicador" data-indice="4" aria-label="Mostrar pingüino"></button>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Zoo Aventura</p>
+    </footer>
+
+    <!-- Archivo JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+```
