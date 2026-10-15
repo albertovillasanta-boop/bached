@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+{% load static %} <!-- Esta línea le dice a django que usaremos los static -->
+<html>
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Zoo Aventura</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <!-- Logo de la pestaña (favicon) -->
+    <link rel="icon" type="image/png" href="{% static 'imagenes/narwhal.jpg' %}">
+</head>
+
+<body>
+
+    <header>
+        <h1>🦁 Zoo Aventura</h1>
+
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#animales">Animales</a>
+            <a href="#horarios">Horarios</a>
+            <a href="#contacto">Contacto</a>
+            <a href="http://127.0.0.1:8000/carrusel">Carrusel</a>
+        </nav>
+    </header>
+
+    <main>
+
+        {% block main %}
+        {% endblock main %}
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+
+            <p>Email: contacto@zooaventura.com</p>
+            <p>Teléfono: 600 123 456</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Zoo Aventura</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="{% static 'js/style.js' %}"></script>
+
+</body>
+</html>
