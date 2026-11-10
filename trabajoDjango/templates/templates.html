@@ -1,17 +1,20 @@
 <!DOCTYPE html>
-{% load static %} <!-- Esta línea le dice a django que usaremos los static -->
+
 <html>
- <head>
+
+<head>
+    {% load static %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Zoo Aventura</title>
 
-    <!-- CSS -->
+    
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
-    <!-- Logo de la pestaña (favicon) -->
+    
     <link rel="icon" type="image/png" href="{% static 'imagenes/narwhal.jpg' %}">
+
 </head>
 
 <body>
@@ -24,15 +27,23 @@
             <a href="#animales">Animales</a>
             <a href="#horarios">Horarios</a>
             <a href="#contacto">Contacto</a>
-            <a href="http://127.0.0.1:8000/carrusel">Carrusel</a>
+            <a href="{% url 'homepage' %}">Home</a>
+            <a href="{% url 'carrusel:homepage' %}">Carrusel</a>
+            <a href="{% url 'Tres_en_Raya:Tres_en_Raya' %}">Tres en raya</a>
+            <!-- <a href="http://127.0.0.1:8000/carrusel">Carrusel</a> -->
         </nav>
     </header>
 
     <main>
-
+        <section>
         {% block main %}
         {% endblock main %}
 
+
+
+
+        </section>
+        
         <section id="contacto">
             <h2>Contacto</h2>
 
@@ -50,4 +61,5 @@
     <script src="{% static 'js/style.js' %}"></script>
 
 </body>
+
 </html>

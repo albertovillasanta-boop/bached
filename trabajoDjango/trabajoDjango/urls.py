@@ -21,6 +21,8 @@ from . import views
 
 urlpatterns = [
  path('admin/', admin.site.urls),
- path('', views.homepage),
- path('carrusel/', include('carrusel.urls'))
+ path('', views.homepage, name='homepage'),
+ path('carrusel/', include('carrusel.urls')),
+ path('calendario/', include('calendario.urls')),
+ path('Tres_en_Raya/', include('Tres_en_Raya.urls'))
 ]
